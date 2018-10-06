@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
-- path: Assets/jogo.unity
+- path: Assets/Scenes/jogo.unity
   isLoaded: 1
   isActive: 1
->>>>>>> parent of 32a1d91... Colocado todos os modelos 3d e feito jogada de dados
