@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class Sistema : MonoBehaviour {
 
     public Transform[] Casas;
-    int Casaatual = 0;
+    public static int Casaatual = 0;
+    int numDado;
+    int num = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -16,13 +18,13 @@ public class Sistema : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        numDado = DiceNumberTextScript.diceNumber;
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Casaatual = Casaatual + DiceNumberTextScript.diceNumber;
-            if (Casaatual < Casas.Length)
+            Casaatual = Casaatual + numDado;
+            if ((Casaatual < Casas.Length))
             {
                 transform.position = Casas[Casaatual].position;
-                Debug.Log(Casaatual);
             }
             else
             {

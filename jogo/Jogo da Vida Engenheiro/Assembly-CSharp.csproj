@@ -61,10 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\CameraPrincipal.cs" />
     <Compile Include="Assets\Script\DiceCheckZoneScript.cs" />
     <Compile Include="Assets\Script\DiceNumberTextScript.cs" />
     <Compile Include="Assets\Script\DiceScript.cs" />
     <Compile Include="Assets\Script\Sistema.cs" />
+    <Compile Include="Assets\Script\SorteiaCarta.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/miche/Desktop/facens/PA2/jogodavidaengenheiro/jogo/Jogo da Vida Engenheiro/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
