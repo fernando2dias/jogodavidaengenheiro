@@ -70,7 +70,11 @@ MonoBehaviour:
   m_MinSize: {x: 885, y: 492}
   m_MaxSize: {x: 16010, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 45
+=======
+  controlID: 35
+>>>>>>> master
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +238,11 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 492}
   m_MaxSize: {x: 12010, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 46
+=======
+  controlID: 36
+>>>>>>> master
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,7 +267,11 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 221}
   m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 47
+=======
+  controlID: 37
+>>>>>>> master
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -354,15 +366,21 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Modelos
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\miche\Desktop\facens\PA2\jogodavidaengenheiro\jogo\Jogo
-    da Vida Engenheiro
+  m_LastProjectPath: "C:\\Users\\ferna\\OneDrive\\\xC1rea de Trabalho\\jogodavidaengenheiro\\jogo\\Jogo
+    da Vida Engenheiro"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: e22a0000
     m_LastClickedID: 10978
     m_ExpandedIDs: 00000000dc2a0000f42c0000042f000086350000883500008a3500008c35000000ca9a3b
+=======
+    m_SelectedIDs: 442e0000
+    m_LastClickedID: 11844
+    m_ExpandedIDs: 00000000082b0000182d00000a2f0000683500006a3500006c3500006e35000000ca9a3b
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -390,7 +408,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: ffffffff00000000dc2a0000f42c00003a2e0000042f000086350000883500008a3500008c350000
+=======
+    m_ExpandedIDs: 00000000082b0000182d00000a2f0000683500006a3500006c3500006e350000
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -506,9 +528,15 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: f42c0000
     m_LastClickedID: 0
     m_ExpandedIDs: 40e7ffff00000000ae2f0000e4300000
+=======
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9cc9ffff00000000b42f0000
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,7 +623,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.062614046, y: -0.9369642, z: 0.22810933, w: -0.25718853}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: -0.06261398, y: -0.9369632, z: 0.22810909, w: -0.25718826}
+=======
+    m_Value: {x: -0.00094434613, y: 0.9368345, z: -0.34975198, w: -0.0025281387}
+>>>>>>> master
   m_Size:
     m_Target: 20.658188
     speed: 2

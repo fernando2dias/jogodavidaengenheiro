@@ -26,18 +26,30 @@ fn DialogCallback =
 pluginManager.loadClass FBXIMP;
 pluginManager.loadClass FBXEXP;
 
+<<<<<<< HEAD
 openLog "C:/Users/miche/Desktop/facens/PA2/JOGODA~1/jogo/JOGODA~1/Temp/3dsMax.log" mode:"w"
 print "Start of log file."; flushLog();
 while true do
 (	
 	if ( fileExists "C:/Users/miche/Desktop/facens/PA2/JOGODA~1/jogo/JOGODA~1/Temp/MaxCommandPipe" ) then
+=======
+openLog "C:/Users/ferna/OneDrive/READET~1/JOGODA~2/jogo/JOGODA~1/Temp/3dsMax.log" mode:"w"
+print "Start of log file."; flushLog();
+while true do
+(	
+	if ( fileExists "C:/Users/ferna/OneDrive/READET~1/JOGODA~2/jogo/JOGODA~1/Temp/MaxCommandPipe" ) then
+>>>>>>> master
 	(
 		exportNormals = false;
 		exportTangents = false;
 		bakeAnimations = false;
 		useFileUnits = false;
 	
+<<<<<<< HEAD
 		waitpipe = (openFile "C:/Users/miche/Desktop/facens/PA2/JOGODA~1/jogo/JOGODA~1/Temp/MaxCommandPipe" mode:"r");
+=======
+		waitpipe = (openFile "C:/Users/ferna/OneDrive/READET~1/JOGODA~2/jogo/JOGODA~1/Temp/MaxCommandPipe" mode:"r");
+>>>>>>> master
 		filename = (readLine waitpipe);
 		fbxFilename = (readline waitpipe);
 		
@@ -154,7 +166,11 @@ while true do
 					print "After fbx export"; flushLog();
 				)
 
+<<<<<<< HEAD
 				deleteFile "C:/Users/miche/Desktop/facens/PA2/JOGODA~1/jogo/JOGODA~1/Temp/MaxCommandPipe";
+=======
+				deleteFile "C:/Users/ferna/OneDrive/READET~1/JOGODA~2/jogo/JOGODA~1/Temp/MaxCommandPipe";
+>>>>>>> master
 				print "Finished max loading and fbx conversion"; flushLog();
 			) -- with defaultAction
 		)
