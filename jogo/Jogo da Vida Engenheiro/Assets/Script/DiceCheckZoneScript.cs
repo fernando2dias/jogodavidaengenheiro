@@ -11,28 +11,36 @@ public class DiceCheckZoneScript : MonoBehaviour {
 		diceVelocity = DiceScript.diceVelocity;
 	}
 
+
 	void OnTriggerStay(Collider col)
 	{
-		if (diceVelocity.x == 0f && diceVelocity.y == 0f && diceVelocity.z == 0f)
+       
+        if (diceVelocity.x == 0f && diceVelocity.y == 0f && diceVelocity.z == 0f)
 		{
 			switch (col.gameObject.name) {
 			case "Side1":
 				DiceNumberTextScript.diceNumber = 6;
+                    Sistema.Anda(6);
 				break;
 			case "Side2":
 				DiceNumberTextScript.diceNumber = 5;
-				break;
+                    Sistema.Anda(5);
+                    break;
 			case "Side3":
 				DiceNumberTextScript.diceNumber = 4;
-				break;
+                    Sistema.Anda(4);
+                    break;
 			case "Side4":
 				DiceNumberTextScript.diceNumber = 3;
-				break;
+                    Sistema.Anda(3);
+                    break;
 			case "Side5":
 				DiceNumberTextScript.diceNumber = 2;
-				break;
+                    Sistema.Anda(2);
+                    break;
 			case "Side6":
 				DiceNumberTextScript.diceNumber = 1;
+                    Sistema.Anda(1);
 				break;
 			}
 		}

@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SorteiaCarta : MonoBehaviour
 {
+    //public Text t1, t2;
 
+    Text text;
     public int valorMin = 0;
     public int valorMax = 31;
-    [Space(20)]
     public int cartaSorteada;
-    [Space(20)]
     public List<int> cartasJaSorteadas = new List<int>();
     public List<string> cartas = new List<string>(new string[] {
         "Você passou em Física. Avance 10 casas",//0
@@ -44,173 +45,205 @@ public class SorteiaCarta : MonoBehaviour
         "Você pegou sua Eletiva I relacionada a alimentos. Volte 4 casas",//29
         "Você se tornou papai/mamãe retorne ao início"//30
     });
-    public int avanceMais;
+    public static int avanceMais;
 
 
     void Start()
     {
-
+        text = GetComponent<Text>();
     }
 
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             cartaSorteada = CartaRandomica();
             switch (cartaSorteada)
             {
                 case 0:
                     avanceMais = 10;
-                    Debug.Log(cartas[0]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[0];
                     break;
 
                 case 1:
                     avanceMais = 5;
-                    Debug.Log(cartas[1]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[1];
                     break;
                 case 2:
                     avanceMais = 5;
-                    Debug.Log(cartas[2]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[2];
                     break;
 
                 case 3:
                     avanceMais = 3;
-                    Debug.Log(cartas[3]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[3];
                     break;
 
                 case 4:
                     avanceMais = 4;
-                    Debug.Log(cartas[4]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[4];
                     break;
 
                 case 5:
                     avanceMais = 5;
-                    Debug.Log(cartas[5]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[5];
                     break;
 
                 case 6:
                     avanceMais = 7;
-                    Debug.Log(cartas[6]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[6];
                     break;
 
                 case 7:
                     avanceMais = 4;
-                    Debug.Log(cartas[7]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[7];
                     break;
 
                 case 8:
                     avanceMais = 5;
-                    Debug.Log(cartas[8]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[8];
                     break;
 
                 case 9:
                     avanceMais = 8;
-                    Debug.Log(cartas[9]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[9];
                     break;
 
                 case 10:
                     avanceMais = 7;
-                    Debug.Log(cartas[10]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[10];
                     break;
 
                 case 11:
                     avanceMais = 3;
-                    Debug.Log(cartas[11]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[11];
                     break;
 
                 case 12:
                     avanceMais = 4;
-                    Debug.Log(cartas[12]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[12];
                     break;
 
                 case 13:
                     avanceMais = 3;
-                    Debug.Log(cartas[13]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[13];
                     break;
 
                 case 14:
                     avanceMais = 8;
-                    Debug.Log(cartas[14]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[14];
                     break;
 
                 case 15:
                     avanceMais = -5;
-                    Debug.Log(cartas[15]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[15];
                     break;
 
                 case 16:
                     avanceMais = -3;
-                    Debug.Log(cartas[16]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[16];
                     break;
 
                 case 17:
                     avanceMais = -3;
-                    Debug.Log(cartas[6]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[17];
                     break;
 
                 case 18:
                     avanceMais = -5;
-                    Debug.Log(cartas[18]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[18];
                     break;
+                   
 
                 case 19:
                     avanceMais = -7;
-                    Debug.Log(cartas[19]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[19];
                     break;
 
                 case 20:
                     avanceMais = -4;
-                    Debug.Log(cartas[20]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[20];
                     break;
 
                 case 21:
                     avanceMais = -10;
-                    Debug.Log(cartas[21]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[21];
                     break;
 
                 case 22:
                     avanceMais = -3;
-                    Debug.Log(cartas[22]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[22];
                     break;
                 case 23:
                     avanceMais = -3;
-                    Debug.Log(cartas[23]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[23];
                     break;
 
                 case 24:
                     avanceMais = -4;
-                    Debug.Log(cartas[24]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[24];
                     break;
 
                 case 25:
                     avanceMais = -5;
-                    Debug.Log(cartas[25]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[25];
                     break;
 
                 case 26:
                     avanceMais = -5;
-                    Debug.Log(cartas[26]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[26];
                     break;
 
                 case 27:
                     avanceMais = -2;
-                    Debug.Log(cartas[27]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[27];
                     break;
 
                 case 28:
                     avanceMais = -3;
-                    Debug.Log(cartas[28]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[28];
                     break;
 
                 case 29:
                     avanceMais = -4;
-                    Debug.Log(cartas[29]);
+                    Sistema.Casaatual = Sistema.Casaatual + avanceMais;
+                    text.text = cartas[29];
                     break;
 
                 case 30:
-                    avanceMais = 7; // tem que voltar para o inicio
-                    Debug.Log(cartas[30]);
+                    avanceMais = Sistema.Casaatual; // tem que voltar para o inicio
+                    Sistema.Casaatual = Sistema.Casaatual - avanceMais;
+                    text.text = cartas[30];
                     break;
 
 
