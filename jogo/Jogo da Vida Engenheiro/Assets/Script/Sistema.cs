@@ -4,34 +4,48 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Sistema : MonoBehaviour {
+public class Sistema : MonoBehaviour
+{
 
     public Transform[] Casas;
     public static int Casaatual = 0;
-    int numDado;
-    int num = 0;
+    public static bool dadoParado = false;
 
-	// Use this for initialization
-	void Start () {
 
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        numDado = DiceNumberTextScript.diceNumber;
-        if (Input.GetKeyDown(KeyCode.Space))
+    public static void Anda(int Nova)
+    {
+        if (dadoParado == false)
         {
-            Casaatual = Casaatual + numDado;
-            if ((Casaatual < Casas.Length))
-            {
-                transform.position = Casas[Casaatual].position;
-            }
-            else
-            {
-                Casaatual = 46;
-                transform.position = Casas[Casaatual].position;
-            }
+            Casaatual = Casaatual + Nova;
+            dadoParado = true;
+            
         }
     }
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+       // Casaatual = Casaatual + DiceNumberTextScript.diceNumber;
+
+        if (Casaatual < Casas.Length)
+        {
+            transform.position = Casas[Casaatual].position;
+
+        }
+        else
+        {
+            Casaatual = 46;
+            transform.position = Casas[Casaatual].position;
+        }
+    }
+
+
+
 
 }

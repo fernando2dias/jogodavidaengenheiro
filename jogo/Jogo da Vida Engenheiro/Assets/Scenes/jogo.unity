@@ -643,7 +643,7 @@ GameObject:
   m_Layer: 0
   m_Name: Side2
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1404,6 +1404,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2028925417}
+  - {fileID: 671856906}
   m_Father: {fileID: 84534874}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2401,7 +2402,7 @@ GameObject:
   m_Layer: 0
   m_Name: Side3
   m_TagString: Untagged
-  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2636,6 +2637,138 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
+--- !u!1 &671856905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 671856906}
+  - component: {fileID: 671856909}
+  - component: {fileID: 671856908}
+  - component: {fileID: 671856907}
+  m_Layer: 5
+  m_Name: TextoCartas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &671856906
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671856905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371502883}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &671856907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671856905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92e1c3efcaa95842887d6c20b1b91f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valorMin: 0
+  valorMax: 31
+  cartaSorteada: 0
+  cartasJaSorteadas: 
+  cartas:
+  - "Voc\xEA passou em F\xEDsica. Avance 10 casas"
+  - "Sua matem\xE1tica b\xE1sica estava em dia. Avance 5 casas"
+  - "Voc\xEA se destacou na TECNOFACENS. Avance 5 casas"
+  - "Voc\xEA foi fazer a maratona de programa\xE7\xE3o e ganhou. Avance 3 casas"
+  - "Voc\xEA foi selecionado para participar do F\xF3rmula. Avance 4 casas"
+  - "Voc\xEA encontou um vale salgado na sua carteira. Avance 5 casas"
+  - "Voc\xEA entendeu a mat\xE9ria de Banco de Dados. Parab\xE9ns. Avance 7 casas"
+  - Seu grupo no trabalho te ajudou. Avance 4 casas
+  - "Voc\xEA visitou a biblioteca al\xE9m de sua inaugura\xE7\xE3o. Avance 5 casas"
+  - "Voc\xEA n\xE3o frequenta festas e estuda. Avance 8 casas"
+  - "Voc\xEA frequenta festas e n\xE3o passa vergonha. Avance 7 casas"
+  - "Voc\xEA foi campe\xE3o com a equipe de volei. Avance 3 casas"
+  - "Voc\xEA conseguiu assistir todas as palestras da Semana da Engenharia. Avance
+    4 casas"
+  - "Voc\xEA teve uma ideia de um bilh\xE3o de dolares e est\xE1 recebendo tutoria.
+    Avance 3 casas"
+  - "Voc\xEA n\xE3o matou aula para ir ao bar. Avance 8 casas"
+  - "Sua grade foi reorganizada, voc\xEA vai precisar fazer F\xEDsica IV. Volte 5
+    casas"
+  - "Algoritmos e Programa\xE7\xE3o foi um pesadelo para voc\xEA. Volte 3 casas"
+  - "Voc\xEA se esfor\xE7ou muito mas n\xE3o coneguiu entender Algebra Linear e Geometria
+    Anal\xEDtica. Volte 3 casas"
+  - "Voc\xEA errou matem\xE1tica b\xE1sica e pegou DP em c\xE1lculo. Volte 5 casas"
+  - "Voc\xEA achou que nunca choveria, ent\xE3o faltou em todas as aulas de Introdu\xE7\xE3o
+    \xE0 Engenharia. Volte 7 casas"
+  - "O Breda \xE9 o seu professor de L\xF3gica Computacional. Volte 4 casas"
+  - "Voc\xEA achou que era o Superman e puxou duas materias de Projeto \xE0 Engenharia.
+    Volte 10 casas"
+  - "Qu\xEDmica Geral foi mais dif\xEDcil do que imaginou e voc\xEA n\xE3o estudou.
+    Volte 3 casas"
+  - "Voc\xEA recebeu um trabalho e deixou para \xFAltima hora. Perca uma noite de
+    estudo e volte 3 casas"
+  - "Estat\xEDstica n\xE3o entra na sua cabe\xE7a e a DP vem a galope. Volte 4 casas"
+  - "Voc\xEA esqueceu de fazer as provas de EAD. Volte 5 casas"
+  - "Andrea \xE9 a sua professora de programa\xE7\xE3o estruturada. Volte 5 casas"
+  - "Voc\xEA tentou fazer os c\xE1lculos de C\xE1lculo Num\xE9rico, mas n\xE3o deu
+    certo. Volte 2 casas."
+  - "Voc\xEA pegou F\xEDsica II com o Diego. Volte 3 casas."
+  - "Voc\xEA pegou sua Eletiva I relacionada a alimentos. Volte 4 casas"
+  - "Voc\xEA se tornou papai/mam\xE3e retorne ao in\xEDcio"
+--- !u!114 &671856908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671856905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &671856909
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671856905}
+  m_CullTransparentMesh: 0
 --- !u!1001 &676786818
 Prefab:
   m_ObjectHideFlags: 0
@@ -3686,7 +3819,7 @@ GameObject:
   m_Layer: 0
   m_Name: Side4
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4730,7 +4863,7 @@ GameObject:
   m_Layer: 0
   m_Name: Side5
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4960,8 +5093,7 @@ Prefab:
     - target: {fileID: 100014, guid: 8594f2b24930c1d4eb8e774b368aa562, type: 3}
       propertyPath: m_Icon
       value: 
-      objectReference: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000,
-        type: 0}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8594f2b24930c1d4eb8e774b368aa562, type: 3}
   m_IsPrefabAsset: 0
@@ -5329,6 +5461,10 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f98cd48662cb3b648959386d8d8f7852, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f98cd48662cb3b648959386d8d8f7852, type: 3}
   m_IsPrefabAsset: 0
@@ -5680,7 +5816,7 @@ GameObject:
   m_Layer: 0
   m_Name: Side1
   m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7012,7 +7148,7 @@ GameObject:
   m_Layer: 0
   m_Name: Side6
   m_TagString: Untagged
-  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
