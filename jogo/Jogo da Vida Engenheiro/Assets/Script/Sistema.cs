@@ -16,11 +16,11 @@ public class Sistema : MonoBehaviour
     {
         if (dadoParado == false)
         {
-            Casaatual = Casaatual + Nova;
+            Casaatual = Casaatual + Nova;            
             dadoParado = true;
-            
         }
     }
+
     // Use this for initialization
     void Start()
     {
@@ -30,13 +30,17 @@ public class Sistema : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-       // Casaatual = Casaatual + DiceNumberTextScript.diceNumber;
-
         if (Casaatual < Casas.Length)
         {
-            transform.position = Casas[Casaatual].position;
-
+            if(Casaatual < 0)
+            {
+                transform.position = Casas[0].position;
+                Casaatual = 0;
+            }
+            else
+            {
+                transform.position = Casas[Casaatual].position;
+            }
         }
         else
         {

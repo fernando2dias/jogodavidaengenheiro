@@ -43,6 +43,6 @@ public class DiceCheckZoneScript : MonoBehaviour {
                     Sistema.Anda(1);
 				break;
 			}
-		}
+        }
 	}
 }

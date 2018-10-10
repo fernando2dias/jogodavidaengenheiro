@@ -5,35 +5,45 @@ using UnityEngine.UI;
 
 public class MudaCamTxt : MonoBehaviour {
 
-    public Text t1, t2, t3;
     public Camera c1, c2;
+    public GameObject btnVerCarta, btnVoltaPrincipal;
+    public static bool mostraCartas, mostraBtnEscolha;
 
 	// Use this for initialization
 	void Start () {
         c1.gameObject.SetActive(true);
         c2.gameObject.SetActive(false);
-        t1.gameObject.SetActive(false);
-        t2.gameObject.SetActive(false);
-        t3.gameObject.SetActive(true);
-	}
+        btnVerCarta.SetActive(false);
+        mostraCartas = false;
+        mostraBtnEscolha = false;
+    }
 	
 	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.E))
+	void FixedUpdate () {
+        // Habilita e desabilita o botão de escolher carta
+        if (mostraBtnEscolha)
         {
-            c1.gameObject.SetActive(false);
-            c2.gameObject.SetActive(true);
-            t1.gameObject.SetActive(true);
-            t3.gameObject.SetActive(false);
+            btnVerCarta.SetActive(true);
         }
+        mostraBtnEscolha = false;
+    }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            c1.gameObject.SetActive(true);
-            c2.gameObject.SetActive(false);
-            t1.gameObject.SetActive(false);
-            t2.gameObject.SetActive(false);
-            t3.gameObject.SetActive(true);
-        }
+    // Função para ir para a tela da carta, quando apertar o botão "escolha uma carta"
+    public void VerCarta()
+    {
+        c1.gameObject.SetActive(false);
+        c2.gameObject.SetActive(true);
+        mostraCartas = true;
+        DiceScript.jogaDado = false;
+    }
+
+    //Função para voltar para a tela principal quando aperta no botão "voltar" da tela da carta
+    public void VoltaTelaPrincipal()
+    {
+        c1.gameObject.SetActive(true);
+        c2.gameObject.SetActive(false);
+        btnVerCarta.SetActive(false);
+
+        DiceScript.jogaDado = true;
     }
 }

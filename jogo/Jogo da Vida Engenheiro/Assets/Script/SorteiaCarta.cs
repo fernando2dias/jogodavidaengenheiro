@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class SorteiaCarta : MonoBehaviour
 {
     //public Text t1, t2;
-
+    public static bool mudaCarta;
     Text text;
     public int valorMin = 0;
-    public int valorMax = 31;
+    public int valorMax = 32;
     public int cartaSorteada;
     public List<int> cartasJaSorteadas = new List<int>();
     public List<string> cartas = new List<string>(new string[] {
@@ -56,9 +56,11 @@ public class SorteiaCarta : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (MudaCamTxt.mostraCartas && mudaCarta) 
         {
             cartaSorteada = CartaRandomica();
+            MudaCamTxt.mostraCartas = false;
+            mudaCarta = false;
             switch (cartaSorteada)
             {
                 case 0:
@@ -253,6 +255,7 @@ public class SorteiaCarta : MonoBehaviour
 
 
             }
+            
         }
     }
 
